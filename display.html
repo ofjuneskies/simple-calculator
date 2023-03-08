@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Calculator</title>
+    <link rel = "stylesheet" href = "stylesheet.css">
+</head>
+
+<body>
+
+    <table class = "device">
+        <tr>
+            <td colspan="3"><input class = "screen" type = "text" id = "screen"/></td>
+            <td> <input id = "power" type = "button" class = "button2" value="OFF" onclick="power()"/></td>
+        </tr>
+        <tr>
+            <td> <input type = "button" class = "button3" value="AC" onclick="clearScreen()"/></td>
+            <td> <input type = "button" class = "button" value="^"onclick="screen('**')"/></td>
+            <td> <input type = "button" class = "button" value="%" onclick="screen('*0.01')"/></td>
+            <td> <input type = "button" class = "button" value="/" onclick="screen('/')"></td>
+        </tr>
+        <tr>
+            <td> <input type = "button" class = "button" value="7" onclick="screen('7')"/></td>
+            <td> <input type = "button" class = "button" value="8" onclick="screen('8')"/></td>
+            <td> <input type = "button" class = "button" value="9" onclick="screen('9')"/></td>
+            <td> <input type = "button" class = "button" value="*" onclick="screen('*')"/></td>
+        </tr>
+        <tr>
+            <td> <input type = "button" class = "button" value="4" onclick="screen('4')"/></td>
+            <td> <input type = "button" class = "button" value="5" onclick="screen('5')"/></td>
+            <td> <input type = "button" class = "button" value="6" onclick="screen('6')"/></td>
+            <td> <input type = "button" class = "button" value="-" onclick="screen('-')"/></td>
+        </tr>
+        <tr>
+            <td> <input type = "button" class = "button" value="1" onclick="screen('1')"/></td>
+            <td> <input type = "button" class = "button" value="2" onclick="screen('2')"/></td>
+            <td> <input type = "button" class = "button" value="3" onclick="screen('3')"/></td>
+            <td> <input type = "button" class = "button" value="+" onclick="screen('+')"/></td>
+        </tr>
+        <tr>
+            <td> <input type = "button" class = "button" value="0" onclick="screen('0')"/></td>
+            <td> <input type = "button" class = "button" value="." onclick="screen('.')"/></td>
+            <td> <input type = "button" class = "button3" value="del" onclick="del()"/></td>
+            <td> <input type = "button" class = "button3" value="=" onclick="calculate()"/></td>
+        </tr>
+    </table>
+    <script type = "text/javascript" src = "script.js"></script>
+
+</body>
